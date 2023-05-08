@@ -36,7 +36,7 @@ function tu_biao() {
 
     // 用 XMLHttpRequest 加载湖南省地图数据
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://geo.datav.aliyun.com/areas_v3/bound/430000_full.json', true);
+    xhr.open('GET', '../430000_full.json', true);
     xhr.onload = function () {
       if (xhr.status === 200) {
         let geoJson = JSON.parse(xhr.responseText);
